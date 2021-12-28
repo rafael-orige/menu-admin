@@ -1,0 +1,114 @@
+.user-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 285px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: #1e87e3;
+  height: 100%;
+  box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.2);
+  transition: all ease-in-out 0.5s;
+  overflow: hidden;
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-image: url("https://i.imgur.com/Sj5gbDE.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.user-info .user-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  width: 65px;
+  height: 65px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.user-info .user-photo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user-info .user-name h2 {
+  font-size: 19px;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.menu-title h1 {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 400;
+  height: 50px;
+  margin: 0;
+}
+
+.menu-title .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 27%;
+  display: none;
+  z-index: 99;
+}
+
+.close-btn img {
+  width: auto;
+  height: 25px;
+  margin-left: 20px;
+  filter: invert(1);
+}
+
+.user-menu nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #212121;
+  color: white;
+}
+
+.user-menu nav ul {
+  list-style-type: none;
+}
+
+.user-menu nav ul li {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.user-menu nav ul li img {
+  filter: invert(1);
+  width: 30px;
+  height: auto;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .menu-title .close-btn {
+    display: block;
+  }
+}

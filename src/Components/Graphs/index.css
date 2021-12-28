@@ -1,0 +1,167 @@
+.graph-area {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  width: 100%;
+  height: 150px;
+  overflow: visible;
+}
+
+.graph-area.orders {
+  background-color: #9c28b1;
+  color: white;
+}
+
+.graph-area.browsers {
+  color: #a6a4a0;
+  height: 350px;
+}
+
+.graph-area.sales {
+  background-color: #d61b61;
+  color: white;
+}
+
+.graph-area.sales .graph-area--title {
+  background-color: #ea1e63;
+}
+
+.graph-area.orders .graph-area--title {
+  background-color: #8e24aa;
+}
+
+.graph-area--title h1 {
+  font-size: 23px;
+  margin: 0px;
+  font-weight: 400;
+  padding: 5px 5px;
+}
+
+.graph {
+  height: 70%;
+  width: 100%;
+}
+
+.graph canvas {
+  padding: 0 10px;
+}
+
+.graph-area.browsers .graph {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 310px;
+  width: 80%;
+  margin-top: 20px;
+  margin-right: 0;
+}
+
+.chrome,
+.firefox,
+.safari {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.label.chrome {
+  background-color: #009cad;
+}
+
+.label.firefox {
+  background-color: #db0050;
+}
+
+.label.safari {
+  background-color: #9300bb;
+}
+
+.label div {
+  width: 10px;
+  height: 2px;
+  background-color: white;
+}
+
+.label.chrome div:first-child {
+  transform: rotate(45deg);
+}
+.label.chrome div:last-child {
+  transform: rotate(-45deg);
+  margin-left: -3px;
+}
+
+.label.firefox {
+  flex-direction: column;
+}
+.label.firefox div:first-child {
+  transform: rotate(45deg);
+}
+.label.firefox div:last-child {
+  transform: rotate(-45deg);
+  margin-top: 3px;
+}
+
+.label.safari div:first-child {
+  transform: rotate(-45deg);
+}
+.label.safari div:last-child {
+  transform: rotate(45deg);
+  margin-left: -3px;
+}
+
+@media (max-width: 910px) {
+  .graph-area {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 610px) {
+  .graph-area.browsers .graph {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 310px;
+  }
+
+  .graph-area.browsers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 410px;
+    padding-bottom: 50px;
+  }
+
+  .graph-area.browsers .doughnut-label {
+    display: flex;
+  }
+
+  .chrome.label-container,
+  .firefox.label-container,
+  .safari.label-container {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .graph-area.browsers .doughnut-label {
+    flex-direction: column;
+  }
+
+  .chrome.label-container,
+  .firefox.label-container,
+  .safari.label-container {
+    margin-right: 0px;
+  }
+}

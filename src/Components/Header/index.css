@@ -1,0 +1,155 @@
+header {
+  display: flex;
+  align-items: center;
+  max-width: 100vw;
+  width: 100%;
+  height: 50px;
+  background-color: #1e87e3;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+header nav {
+  width: inherit;
+}
+
+header ul {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 10px;
+}
+
+header ul li:nth-child(2) {
+  max-width: 80%;
+  width: 100%;
+}
+
+.list-menu {
+  display: flex;
+  align-items: center;
+}
+
+.list-menu img {
+  display: none;
+  width: auto;
+  height: 25px;
+  margin-left: 20px;
+  filter: invert(1);
+}
+
+.header-menu {
+  cursor: pointer;
+}
+
+.header-menu div {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin-top: 3px;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+}
+
+.header-search input {
+  width: 100%;
+  padding: 7px 5px;
+  border: 0px;
+  outline: none;
+  background-color: #2096f3;
+  color: white;
+}
+
+.header-search input::placeholder {
+  color: white;
+}
+
+.header-buttons {
+  display: flex;
+}
+
+.header-navigation {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.settings {
+  margin-right: 30px;
+}
+
+.row-1,
+.row-2 {
+  display: flex;
+}
+
+.row-2 {
+  margin-top: -5px;
+}
+
+.row-1 div,
+.row-2 div {
+  width: 5px;
+  height: 5px;
+  margin-right: 3px;
+  margin-top: 3px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.settings {
+  cursor: pointer;
+}
+
+.settings div {
+  width: 5px;
+  height: 5px;
+  margin-top: 3px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+@media (max-width: 610px) {
+  nav {
+    margin: 0 10px;
+  }
+
+  .list-menu img {
+    display: block;
+  }
+
+  .header-search.disabled,
+  .search-icon.disabled,
+  .header-buttons.disabled {
+    display: none;
+  }
+
+  .header-search.active,
+  .search-icon.active {
+    display: block;
+  }
+
+  .header-search.active input {
+    width: 95%;
+  }
+
+  .header-buttons.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 375px) {
+  .search-icon {
+    margin-right: 10px;
+  }
+}
