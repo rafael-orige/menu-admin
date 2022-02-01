@@ -7,7 +7,7 @@
 <h2>Sobre o projeto:</h2>
 
 Este projeto foi feito para praticar um pouco de ReactJS e testar o uso de NodeJS após alguns estudos.<br/>
-Os gráficos puxam dados de uma api local que irá ser disponibilizada aqui no projeto.
+Os gráficos puxam dados de uma api que está hospedada no Heroku.
 Além disso, o design foi feito com base em uma imagem achada no Google, mas eu não sei quem foi o criador original, então vou deixar o link abaixo para o site em que esta imagem está.
 <a href="https://tableless.com.br/ferramentas-desenvolvedor-react-2019/">Tableless</a>
 
